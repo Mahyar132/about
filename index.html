@@ -3,267 +3,101 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <!-- My analytics system! =^.^= -->
         <script data-goatcounter="https://mahyar132.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+        <!-- The CSS Mafia -->
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/custom.css" />
+
         <title>About</title>
-
-        <style>
-            :root {
-                --bg: #0f1115;
-                --text: #e6e8eb;
-                --dim: #8b919a;
-                --accent: #7aa2f7;
-                --line: #292d35;
-                --mono: Consolas, "Courier New", monospace;
-            }
-
-            * {
-                box-sizing: border-box;
-            }
-
-            body {
-                margin: 0;
-                background: var(--bg);
-                color: var(--text);
-                font:
-                    14px/1.5 -apple-system,
-                    BlinkMacSystemFont,
-                    "Segoe UI",
-                    Roboto,
-                    Arial,
-                    sans-serif;
-            }
-
-            header,
-            main,
-            footer {
-                max-width: 1000px;
-                margin: auto;
-            }
-
-            header {
-                padding: 48px 24px 24px;
-            }
-
-            h1 {
-                margin: 0 0 6px;
-                color: #00aff0;
-                font: 700 30px var(--mono);
-            }
-
-            .tagline {
-                margin: 0;
-                color: var(--dim);
-            }
-
-            nav {
-                position: sticky;
-                top: 0;
-                z-index: 2;
-                background: rgba(15, 17, 21, 0.92);
-                backdrop-filter: blur(6px);
-                border-bottom: 1px solid var(--line);
-            }
-
-            nav ul {
-                display: flex;
-                gap: 6px;
-                max-width: 1000px;
-                margin: auto;
-                padding: 10px 24px;
-                overflow-x: auto;
-                overflow-y: hidden;
-                list-style: none;
-                scrollbar-width: none;
-            }
-
-            nav ul::-webkit-scrollbar {
-                display: none;
-            }
-
-            nav a {
-                display: block;
-                padding: 6px 11px;
-                border: 1px solid var(--line);
-                border-radius: 4px;
-                color: var(--dim);
-                font: 13px var(--mono);
-                text-decoration: none;
-                white-space: nowrap;
-            }
-
-            nav a:visited {
-                color: var(--dim);
-            }
-
-            nav a:hover {
-                color: var(--text);
-                border-color: #3a404b;
-            }
-
-            nav a.active {
-                background: #007bff;
-                border-color: #007bff;
-                color: #fff;
-            }
-
-            nav a.active:visited {
-                color: #fff;
-            }
-
-            main {
-                padding: 36px 24px 48px;
-            }
-
-            h2 {
-                margin: 0 0 24px;
-                color: var(--accent);
-                font: 12px var(--mono);
-                letter-spacing: 0.1em;
-                text-transform: uppercase;
-            }
-
-            h3 {
-                margin: 36px 0 18px;
-                color: var(--accent);
-                font: 12px var(--mono);
-                letter-spacing: 0.1em;
-                text-transform: uppercase;
-            }
-
-            p {
-                margin: 0 0 18px;
-            }
-
-            a {
-                color: #00aff0;
-            }
-
-            a:visited {
-                color: #00aff0;
-            }
-
-            strong {
-                color: var(--text);
-            }
-
-            em {
-                color: var(--dim);
-                font-style: normal;
-            }
-
-            footer {
-                padding: 32px 24px 48px;
-                color: var(--dim);
-                font-size: 12px;
-            }
-
-            .footer-grid {
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                gap: 8px 18px;
-            }
-
-            .footer-line {
-                height: 1px;
-                margin: 14px 0;
-                background: var(--line);
-            }
-
-            @media (max-width: 700px) {
-                main {
-                    padding: 32px 18px 40px;
-                }
-            }
-
-            @media (max-width: 480px) {
-                header {
-                    padding: 36px 18px 24px;
-                }
-
-                h1 {
-                    font-size: 24px;
-                }
-
-                nav ul {
-                    padding-left: 12px;
-                    padding-right: 12px;
-                }
-
-                main {
-                    padding: 28px 12px 40px;
-                }
-
-                footer {
-                    padding: 28px 18px 36px;
-                }
-            }
-        </style>
     </head>
 
     <body>
-        <header>
-            <h1>Isotope</h1>
-            <p class="tagline">Mahyar's Laboratory</p>
+        <header class="container py-3">
+            <h1 class="Ubuntu logo">Isotope</h1>
+            <p class="text-secondary">A little laboratory on the internet</p>
         </header>
 
-        <nav>
-            <ul>
-                <li><a href="https://mahyar132.github.io/">Home</a></li>
-                <li><a class="active" href="https://mahyar132.github.io/about/">About</a></li>
-                <li><a href="https://mahyar132.github.io/projects/">Projects</a></li>
-                <li><a href="https://mahyar132.github.io/contact/">Contact</a></li>
-                <li><a href="https://mahyar132.github.io/art/">Art</a></li>
-            </ul>
+        <nav class="navbar navbar-expand navbar-dark bg-dark sticky-top border-bottom custom-navbar">
+            <div class="container">
+                <ul class="navbar-nav nav-pills flex-row flex-nowrap gap-2 overflow-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://mahyar132.github.io/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://mahyar132.github.io/about/">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://mahyar132.github.io/projects/">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://mahyar132.github.io/contact/">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://mahyar132.github.io/art/">Art</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
-        <main>
-            <h2>About</h2>
+        <main class="container py-3">
+            <h6 class="text-info mb-4"><em>About</em></h6>
 
             <p>
-                Isotope is my personal website (or my lab! 😺) for my artwork, visual experiments, software dev, and
-                other things by <strong>Varen (Mahyar)</strong>.
+                Isotope is my personal website (or my lab!
+                <img src="https://mahyar132.github.io/isotope-assets/emote/emoji_u1f63a.svg" height="20" alt="😺" loading="lazy" />)
+                for my artwork, visual experiments, software dev, and other things by <strong>Varen (Mahyar)</strong>.
             </p>
 
-            <h3>Technical</h3>
+            <h4 class="text-info">Technical</h4>
 
             <p>
-                Website: HTML, CSS, and JavaScript<br />
-                Hosting: GitHub Pages<br />
-                Source: Public Git repository<br />
+                Website: HTML, CSS, and a little JavaScript<br />
+                Hosting: <a href="https://pages.github.com/">GitHub Pages</a><br />
+                Source code: Publicly available on GitHub<br />
                 Server-side code: None<br />
-                Analytics: GoatCounter<br />
+                Analytics: <a href="https://goatcounter.com/">GoatCounter</a><br />
+                CSS Framework: <a href="https://getbootstrap.com/">Bootstrap</a><br />
                 Launched: August 10, 2026<br />
-                Website code license: GNU GPLv3<br />
-                Artwork license (Art page): CC BY-SA 4.0<br />
+                Website code license: <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPLv3</a><br />
+                Artwork license (Art page): <a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC BY 4.0</a
+                ><br />
                 Copyright: © Mahyar Projects
             </p>
 
             <p>
-                The website is built and maintained as a relatively simple static project. Isotope is open-source and
-                the source code is publicly available.
+                The website is built and maintained as a relatively simple static project. Isotope is
+                <em>free & open-source</em> and the source code is publicly available.
+            </p>
+
+            <p>
+                Proudly powered by free & open software:
+                <a href="https://getbootstrap.com/">Bootstrap</a>,
+                <a href="https://notepad-plus-plus.org/">Notepad++</a>,
+                <a href="https://www.goatcounter.com/">GoatCounter</a>, <a href="https://krita.org/en/">Krita</a>,
+                <a href="https://www.firefox.com/en/">Firefox</a>
             </p>
         </main>
 
-        <footer>
-            <div class="footer-grid">
-                <span>Mahyar</span>
-                <span>Under Development</span>
-            </div>
+        <footer class="container text-center py-4 text-secondary small">
+            <hr />
 
-            <div class="footer-line"></div>
-
-            Copyright © 2026 - <span id="year"></span> Mahyar Projects
+            <!-- A little JavaScript trick to keep the copyright year up to date -->
+            <p>
+                Copyright © 2026 –
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
+                Mahyar Projects
+            </p>
 
             <p>
                 This site is open source and licensed under the
-                <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPLv3 License</a>.
-                <a href="https://github.com/Mahyar132/about">Improve this page</a>.
+                <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPLv3</a> –
+                <a href="https://github.com/Mahyar132/about">Improve this page</a>
             </p>
         </footer>
-
-        <script>
-            document.getElementById("year").textContent = new Date().getFullYear();
-        </script>
     </body>
 </html>
